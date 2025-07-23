@@ -12,33 +12,6 @@
 - 🔵 [Zod](https://zod.dev/) - para validação de dados
 - 🔵 [dotenv](https://www.npmjs.com/package/dotenv) - para gerenciamento de variáveis de ambiente
 
-## 📁 Estrutura de Pastas
-
-📦 src
-├── 📁 config              # Configurações (ex: banco de dados, variáveis env)
-│   └── prisma.ts
-├── 📁 modules             # Módulos ou funcionalidades (por domínio)
-│   └── user
-│       ├── user.controller.ts
-│       ├── user.service.ts
-│       ├── user.repository.ts
-│       ├── user.schema.ts     # Zod: validação e tipagem
-│       ├── user.routes.ts
-│       └── user.types.ts      # Tipagens específicas (se necessário)
-├── 📁 middlewares         # Middlewares personalizados (auth, errors, etc.)
-│   └── errorHandler.ts
-├── 📁 utils               # Funções utilitárias
-│   └── logger.ts
-├── 📁 validations         # Schemas Zod reutilizáveis globais (opcional)
-├── 📁 database            # Arquivos do Prisma
-│   ├── prismaClient.ts
-│   └── schema.prisma
-├── 📁 routes              # Rotas agrupadas por módulo
-│   └── index.ts
-├── app.ts                # Configuração do Express
-├── server.ts             # Inicialização da aplicação
-└── types.d.ts            # Tipos globais (opcional)
-
 ## ⚙️ Como rodar o projeto localmente
 
 #### Pré-requisitos
@@ -65,7 +38,6 @@
 ## 🚧 Status do Projeto
 
 - [x] Design finalizado
-- [x] Estrutura de pastas definida
 - [x] Modelagem do banco com Prisma
 - [ ] Criação das rotas principais
 - [ ] Implementação da autenticação
