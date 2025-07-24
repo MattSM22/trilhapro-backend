@@ -10,6 +10,11 @@ export const createUserSchema = z.object({
   residencia: z.string()
 });
 
+export const loginUserSchema = z.object({
+  email: z.string().email("O e-mail precisa ser válido"),
+  senha: z.string().min(6, "A senha deve ter no minimo 6 caracteres")
+});
+
 export const updateUserSchema = createUserSchema.partial();
 
 export type CreateUserDTO = z.infer<typeof createUserSchema>;

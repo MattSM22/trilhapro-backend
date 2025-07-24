@@ -5,6 +5,9 @@ export const userService = {
   createUser: async (user: IUser) => {
     return userRepository.create(user);
   },
+  loginUser: async (user: IUser) => {
+    return userRepository.login(user);
+  },
   getUsers: async () => {
     return userRepository.findAll();
   },

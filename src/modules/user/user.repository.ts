@@ -8,6 +8,16 @@ export const userRepository = {
   findAll: () => {
     return prisma.user.findMany();
   },
+  login: (user: IUser) => {
+    return prisma.user.findMany({
+      where: {
+        AND: {
+          email: user.email,
+          senha: user.senha
+        }
+      }
+    });
+  },
   update: (id: string, user: Partial<IUser>) => {
     return prisma.user.update({
       where: { id },
