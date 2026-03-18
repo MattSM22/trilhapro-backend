@@ -1,50 +1,67 @@
-🧠 TRILHAPRO - Backend
-Este é o repositório responsável pelo backend do projeto TRILHAPRO, uma aplicação que tem como objetivo ajudar nos estudos dos usuários criando planos de estudos via manual ou até mesmo utilizando a IA TrilhaPro.
+# 🧠 TRILHAPRO - Backend
 
-🎨 O design do projeto já está finalizado e servirá como base para toda a implementação do frontend e backend.
+![GitHub repo size](https://img.shields.io/github/repo-size/MattSM22/trilhapro-backend)
+![GitHub last commit](https://img.shields.io/github/last-commit/MattSM22/trilhapro-backend)
+![GitHub issues](https://img.shields.io/github/issues/MattSM22/trilhapro-backend)
+![GitHub license](https://img.shields.io/github/license/MattSM22/trilhapro-backend)
+![Node](https://img.shields.io/badge/node-%3E%3D18-green)
+![TypeScript](https://img.shields.io/badge/typescript-5.x-blue)
+![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
 
-📦 Tecnologias Utilizadas
-🔵 Node.js
-🔵 Express
-🔵 TypeScript
-🔵 Prisma ORM
-🔵 PostgreSQL
-🔵 Zod - para validação de dados
-🔵 dotenv - para gerenciamento de variáveis de ambiente
-⚙️ Como rodar o projeto localmente
-Pré-requisitos
-Node.js LTS instalado
-PostgreSQL rodando localmente
-Yarn ou NPM
-Passos
-Clone o repositório
+---
+
+Este repositório contém o backend do projeto **TRILHAPRO**, uma aplicação focada em auxiliar usuários nos estudos por meio da criação de planos de estudo — seja de forma manual ou utilizando a **IA TrilhaPro**.
+
+O design da aplicação já está finalizado e servirá como base para o desenvolvimento do frontend e backend.
+
+---
+
+## 📦 Tecnologias Utilizadas
+
+- 🔵 Node.js  
+- 🔵 Express  
+- 🔵 TypeScript  
+- 🔵 Prisma ORM  
+- 🔵 PostgreSQL  
+- 🔵 Zod  
+- 🔵 dotenv  
+
+---
+
+## ⚙️ Como rodar o projeto localmente
+
+### ✅ Pré-requisitos
+
+- Node.js (LTS recomendado)
+- PostgreSQL rodando localmente
+- Yarn ou NPM
+
+---
+
+### 🚀 Passo a passo
+
+#### 1. Clone o repositório
+```bash
 git clone https://github.com/seu-usuario/nome-do-repo-backend.git
 cd nome-do-repo-backend
+```
 
-Instale as dependências
-yarn install
+<details>
+  <summary>🚧 Status do Projeto</summary>
 
-Configure as variáveis de ambiente
-Crie um arquivo .env com base no .env.example:
-cp .env.example .env
+  - [x] 🎨 Design finalizado  
+  - [x] 🧱 Modelagem do banco com Prisma  
+  - [x] 🔌 Criação das rotas principais  
+  - [x] 🔐 Implementação da autenticação  
+  - [ ] 🚀 Deploy em produção  
 
-Adicione suas credenciais do banco de dados, por exemplo:
-DATABASE_URL="postgresql://user:password@localhost:5432/nomeDoBanco"
+<details>
+  <summary>📌 Próximos Passos</summary>
 
-Rode as migrations do banco
-npx prisma migrate dev --name init
+  - [x] 🔐 Implementar autenticação JWT  
+  - [ ] 🧪 Criar testes unitários  
+  - [ ] 🔗 Criar testes de integração  
+  - [ ] ⚙️ Configurar CI/CD  
+  - [ ] 📄 Documentar API (Swagger ou Redoc)  
 
-Inicie o servidor de desenvolvimento
-yarn dev
-
-🚧 Status do Projeto
- Design finalizado
- Modelagem do banco com Prisma
- Criação das rotas principais
- Implementação da autenticação
- Deploy no ambiente de produção
-📌 Próximos Passos
- Implementar autenticação JWT
- Criar testes unitários e de integração
- Configurar CI/CD
- Criar documentação das rotas (Swagger ou Redoc)
+</details>
